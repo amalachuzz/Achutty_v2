@@ -18,7 +18,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: 'v7.3.6',
     CHANNEL: 'https://t.me/remasterplugin',
-    SESSION: process.env.ACHUTTY_CODE === undefined ? '' : process.env.ACHUTTY_SESSION,
+    SESSION: process.env.ACHUTTY_CODE === undefined ? '' : process.env.ACHUTTY_CODE,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     AFN: process.env.ALL_CAPTION === undefined ? 'MADE BY ACHUTTY' : process.env.ALL_CAPTION,
