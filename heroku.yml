@@ -1,0 +1,5 @@
+build:
+  docker:
+      worker: /Achutty/Dockerfile
+run:
+   worker: npm start
