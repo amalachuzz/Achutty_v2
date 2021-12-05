@@ -31,7 +31,7 @@ Project created by <a href="https://github.com/amalachuzz">Achutty_v2</a> to mak
 
 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Amalser/Amalser)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@amalachuzz/Achutty)
   
 ### The Hard Method
 ```js
