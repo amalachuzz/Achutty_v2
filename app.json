@@ -1,25 +1,40 @@
 {
-    "name": "ACHUTTY BY AMAL R",
-    "description": "achutty bot - re-edited from asena. World’s first UserBot made for WhatsApp.",
-    "logo": "https://i.imgur.com/zdcqaaG.jpeg",
-    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
+    "name": "Achutty_v2",
+    "description": "Achutty_v2  is the Modified Version of WhatsAsena, Made By @amalachuzz with Baileys.",
+    "logo": "https://i.imgur.com/2nYs8dN.jpg",
+    "keywords": ["whatsapp", "userbot", "Liza", "WhatsAsena", "mwol", "bot", "ai"],
     "repository": "https://github.com/amalachuzz/Achutty_v2",
-    "website":   "under maintenance",
-    "success_url": "under maintenance",
+    "website":   "https://github.com/amalachuzz/Achutty_v2",
+    "success_url": "https://github.com/amalachuzz/Achutty_v2",
     "stack": "container",
     "env": {
         "ACHUTTY_CODE": {
-            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours Asena Session.",
+            "description": "Type here yours Asena Session.",
             "required": true
         },
         "SUDO": {
-            "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 1205xxxxxxxxx (USA number +1)",
+            "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 91xxxxxxxxx,0",
             "required": false
         },
         "LANGUAGE": {
-            "description": "only en & ml language is available",
+            "description": "Bot language.English => en",
             "required": true,
             "value": "en"
+        },
+        "BGM_FILTER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "true"
+        },
+        "AUTO_STICKER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "true"
+        },
+        "WELCOME": {
+            "description": "You can select welcome as gif/pp",
+            "required": false,
+            "value": "pp"
         },
         "WEL_GIF": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
@@ -31,88 +46,73 @@
             "required": false,
             "value": "false"
         },
-         "BGM_FILTER": {
-            "description": "If you likes bgm you can write 'true'. Otherwise false",
-            "required": false,
-            "value": "true"
-        },   
         "ANTİ_LİNK": {
-            "description": "Link Engelleme Sistemi. Link Blocking System.",
+            "description": "Link Blocking System.",
+            "required": true,
+            "value": "false"
+        },
+        "AUTO_BİO": {
+            "description": " Set true for auto date, time in biography.",
             "required": true,
             "value": "false"
         },
         "PM_BLOCK": {
+
             "description": "Link Engelleme Sistemi. Link Blocking System.",
+
             "required": true,
+
             "value": "false"
+
         },
-         "STICKER_REPLY": {
-            "description": "if you need Automatic sticker reply type'true'. Otherwise false",
-            "required": false,
-            "value": "true"
-        },  
-        "NUMBER": {
-            "description": "give your orginal phone number if you wish to add it in .number cmnd ",
-            "required": false
-        },
-         "BAD_WORDS": {
-            "description": "enter the word you dont allow in your group ",
-            "required": true,
-            "value": "false"
-        },      
-        "OWNER_NAME": {
-            "description": "reply for .owner ! give your details, Use => default, to change back.",
-            "required": false,
-            "value": "default"
-        },    
         "HANDLERS": {
-            "description": "Komutlar için. For commands.",
+            "description": "For commands.",
             "required": true,
             "value": "^[.!;]"
         },
-        "ALL_LINK_BAN": {
-            "description": "Link Blocking System.- this one blocks all link",
+        "FULL_EVA": {
+            "description": "Turn your account into a chatbot!",
             "required": true,
             "value": "false"
         },
-        "NO_LOG": {
-            "description": "Hata logu görmek istemiyorsanız true yapın. Set true if you don't want to see error log.",
+        "ACHUTTY_AI": {
+            "description": "turn on chat back auto reply Liza (use true to on and fale to off)",
             "required": true,
             "value": "true"
+        },
+        "NO_LOG": {
+            "description": " Set true if you don't want to see error log.",
+            "required": true,
+            "value": "false"
         },
         "SEND_READ": {
-            "description": "Görüldü atmak istiyorsanız true yazın. Write true if you want to throw seen.",
+            "description": "Write true if you want to throw seen.",
             "required": true,
             "value": "true"
         },
-           "ALL_CAPTION": {
-            "description": "Caption for images and videos generated by achutty bot",
+        "ALL_CAPTION": {
+            "description": "Caption for images and videos generated by pinky bot",
             "required": false,
             "value": "PUBLIC BOT"
         },
         "HEROKU": {
-            "description": "Herokuda çalışıyorsa true yazın. If it is running in Heroku, type true.",
+            "description": "If it is running in Heroku, type true.",
             "required": true,
             "value": "true"
         },
-         "BOT_NAME": {
-            "description": "heading for .list command reply",
-            "required": false,
-            "value": "•━━━╼⤏ACHUTTY_V2⤎╾━━━•"
-        },      
-        "TALKING_ACHUTTY": {
-            "description": "Hesabınızı bir Chatbot'a Çevirin! Turn your account into a chatbot!",
-            "required": true,
-            "value": "false"
-        },
         "HEROKU_API_KEY": {
-            "description": "Herokuda API Keyiniz. Heroku API Key.",
+            "description": "Heroku API Key.",
             "required": true
         },
         "MUTE_MESSAGE": {
-            "description": "Düzenlenebilir Mute Mesajı. Customizable Mute Message! Use => default, to change back.",
+            "description": "Customizable Mute Message! Use => default, to change back.",
             "required": false,
             "value": "default"
+        },
+        "TAG_HEADER": {
+            "description": "Heading when taging all",
+            "required": false,
+            "value": "hear me friends"
         },
         "BLOCK_CHAT": {
             "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
@@ -120,51 +120,92 @@
             "value": "false"
         },
         "UNMUTE_MESSAGE": {
-            "description": "Düzenlenebilir Unmute Mesajı. Customizable Unmute Message! Use => default, to change back.",
+            "description": "Customizable Unmute Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "BLOCK_MESSAGE": {
-            "description": "Düzenlenebilir Block Mesajı. Customizable Block Message! Use => default, to change back.",
+            "description": "Customizable Block Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "UNBLOCK_MESSAGE": {
-            "description": "Düzenlenebilir Unblock Mesajı. Customizable Unblock Message! Use => default, to change back.",
+            "description": "Customizable Unblock Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
+        "BOT_NAME": {
+            "description": "heading for .list command reply",
+            "required": false,
+            "value": "  ᴀᴄʜᴜᴛᴛʏ_ᴠ2  \n\n   *ωнαтsαρρ вσт™*   \n"
+        },
+        "BOTV2_NAME": {
+            "description": "heading for bgm command reply",
+            "required": false,
+            "value": "ꪶ͢ɪͥᴛͭsᷤᴍͫᴇͤͤ☚⃟፝᳁ᗩᴄʜᴜᴛᴛʏ࿐"
+        },
+        "BGM_DURATION": {
+            "description": "FUNY BGM DURATION  codded by (hunk!nd3 p4d4y41!",
+            "required": false,
+            "value": "39999600"
+        },
         "WORK_TYPE": {
-            "description": "achutty  Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot. and if you use “admin”, only admin can use bot and not all feature (only features needed to maintain a standerd group)",
+            "description": "Achutty Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
             "required": true,
-            "value": "private"
+            "value": "public"
         },
         "HEROKU_APP_NAME": {
-            "description": "Herokuda uygulama adı. Heroku APP Name.",
+            "description": "Heroku APP Name.",
             "required": true
         },
         "DEBUG": {
-            "description": "Geliştiricilere özeldir.",
+            "description": "Debugging",
             "required": true,
             "value": "false"
         },
         "REMOVE_BG_API_KEY": {
-            "description": "Fotoğrafların arkaplanını kaldırır. https://remove.bg",
-            "required": false
-        },
-        "DEPLOYER": {
-            "description": "enter your name here",
+            "description": "https://remove.bg",
             "required": false
         },
         "ALIVE_MESSAGE": {
-            "description": "Customizable Alive Message! use {pp} if you want to add profile picture also add {qt} if you want to add qoutes in your welcome message",
+            "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "i am alive  \n\n ```made by achutty```\n\n```{qt}```"
+            "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands {pp}```"
+        },
+        "ALIVEBUTTON": {
+            "description": "Set the alive message two name",
+            "required": true,
+            "value": "ʜᴇʟʟᴏ ʙʀᴏ"
+        },
+        "ALIVE_BUTTON": {
+            "description": "Set the Alive message first name",
+            "required": true,
+            "value": "ʜɪ ᴅᴜᴅᴇ"
+        },
+        "LG_LOGO": {
+            "description": "LOGO list message image link(https://telegra.ph/)link.",
+            "required": true,
+            "value": "https://telegra.ph/file/0e0409148fa47cdb92582.jpg"
+        },
+        "LOGO_NAME": {
+            "description": "Set the logo list name",
+            "required": true,
+            "value": "ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇ ͤᴀᴄʜᴜᴛᴛʏ࿐"
         },
         "BAN_MESSAGE": {
-            "description": "Customizable kick Message! Use => default, to change back.",
+            "description": "Customizable Ban Message! Use => default, to change back.",
             "required": false,
-            "value": "good bye"
+            "value": "default"
+        },
+        "SONGD": {
+            "description": "Customizable song DOWNLOADING message instead of 'Dowloading your song'",
+            "required": true,
+            "value": "𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 𝙮𝙤𝙪𝙧 ♩♬𝙎𝙤𝙣𝙜♫"
+        },
+        "SONGU": {
+            "description": "Customizable song UPLOADING message instead of 'Uploading your song'",
+            "required": true,
+            "value": "𝙐𝙥𝙡𝙤𝙖𝙙𝙞𝙣𝙜 𝙮𝙤𝙧 ❥𝙎𝙤𝙣𝙜⚘️"
         },
         "ADD_MESSAGE": {
             "description": "Customizable Add Message! Use => default, to change back.",
@@ -172,19 +213,14 @@
             "value": "default"
         },
         "KICKME_MESSAGE": {
-            "description": "Customizable leave Message! Use => default, to change back.",
+            "description": "Customizable Kickme Message! Use => default, to change back.",
             "required": false,
-            "value": "\n ```its time to leave bye bye``` \n"
+            "value": "default"
         },
         "PROMOTE_MESSAGE": {
             "description": "Customizable Promote Message! Use => default, to change back.",
             "required": false,
             "value": "default"
-        },
-        "CHANGE_BGM_TO": {
-            "description": "Dont leave this blank choose the bgm you need - enter one or two",
-            "required": true,
-            "value": "one"
         },
         "DEMOTE_MESSAGE": {
             "description": "Customizable Demote Message! Use => default, to change back.",
@@ -195,10 +231,6 @@
             "description": "Customizable AFK Message! Use => default, to change back.",
             "required": false,
             "value": "default"
-        },
-        "TAG_REPLY": {
-            "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
-            "required": false          
         },
         "NO_ONLINE": {
             "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
